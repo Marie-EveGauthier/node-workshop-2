@@ -1,8 +1,4 @@
- module.exports = {
-          getFortune: getFortune
-     };
-
-
+ 
 //The getFortune function returns a random fortune/motivational quote
 
 var randomNumber = Math.floor(Math.random() * 10);
@@ -21,4 +17,9 @@ var arrOfQuotes = ["Do not wait to strike till the iron is hot; but make it hot 
 function getFortune() {
     return arrOfQuotes[randomNumber];
 }
+
+//Always at the end of my code
+module.exports = {
+    getFortune: getFortune
+};
 
